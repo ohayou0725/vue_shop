@@ -24,8 +24,9 @@ import {
     Tooltip,
     Pagination,
     Dialog,
-    MessageBox
+    MessageBox, Tag, Tree, Option, Select
 } from 'element-ui'
+import tree from "element-ui/packages/table/src/store/tree";
 
 Vue.use(Button)
 Vue.use(Form)
@@ -52,5 +53,9 @@ Vue.use(Tooltip)
 Vue.use(Pagination)
 Vue.use(Dialog)
 Vue.component(MessageBox)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Option)
+Vue.use(Select)
 Vue.prototype.$message = Message
 Vue.prototype.$confirm = MessageBox.confirm
